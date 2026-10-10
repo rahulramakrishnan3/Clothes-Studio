@@ -6,13 +6,9 @@ const MESSAGE =
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const number = process.env['WHATSAPP_NUMBER'];
 
-  if (!number) {
-    // Fail gracefully — don't expose why it failed
-    res.status(503).send('Service temporarily unavailable.');
-    return;
-  }
-
-  const url = `https://wa.me/${number}?text=${encodeURIComponent(MESSAGE)}`;
+  const url = number
+    ? `https://wa.me/${number}?text=${encodeURIComponent(MESSAGE)}`
+    : `https://web.whatsapp.com/`;  // safe fallback until env var is set
 
   // 302 temporary redirect — WhatsApp opens on the client
   res.redirect(302, url);
