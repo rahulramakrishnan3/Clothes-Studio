@@ -31,8 +31,7 @@
 
           <a
             class="whatsapp-button"
-            [href]="d.hero.cta.href"
-            (click)="onWhatsAppClick($event, d.hero.cta.encodedPayload, d.hero.cta.href)"
+            [href]="whatsappUrl"
             target="_blank"
             rel="noopener noreferrer"
             [attr.aria-label]="d.hero.cta.ariaLabel"
