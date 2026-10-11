@@ -1,0 +1,155 @@
+{
+  "site": {
+    "title": "Sutra Studio — Bespoke Stitching & Hand Embroidery",
+    "metaDescription": "Thoughtful tailoring, careful mending and hand embroidery, made slowly and just for you at Sutra Studio.",
+    "themeColor": "#f8f6ef",
+    "lang": "en"
+  },
+  "brand": {
+    "symbol": "S",
+    "name": "Sutra",
+    "nameSecondary": "Studio",
+    "homeAnchor": "#home",
+    "ariaLabel": "Sutra Studio home"
+  },
+  "header": {
+    "tagline": "Made slowly, made for you",
+    "navAriaLabel": "Main navigation",
+    "navItems": [
+      { "label": "Our craft",    "href": "#craft"    },
+      { "label": "What we make", "href": "#services" },
+      { "label": "The process",  "href": "#process"  }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Bespoke stitching & hand embroidery",
+    "heading": "Clothes with a little more",
+    "headingEmphasis": "you",
+    "headingSuffix": "in them.",
+    "description": "Thoughtful tailoring, careful mending and embroidery made by hand. Bring us a fabric, a favourite piece, or just an idea — we'll make something that feels like yours.",
+    "cta": {
+      "label": "Enquire on WhatsApp",
+      "href": "/api/whatsapp",
+      "ariaLabel": "Enquire with Sutra Studio on WhatsApp",
+      "arrow": "↗"
+    },
+    "textLink": {
+      "label": "Get to know our craft",
+      "href": "#craft",
+      "arrowLabel": "↓"
+    },
+    "note": {
+      "line1": "Good clothes hold a story.",
+      "line2": "Let's stitch yours in."
+    },
+    "art": {
+      "ariaLabel": "A close-up of hand-finished fabric and tailoring",
+      "stamp": {
+        "line1": "Made with",
+        "line2": "intention"
+      },
+      "caption": {
+        "left":  "Studio / 01",
+        "right": "A slower kind of making"
+      },
+      "spark": "✳"
+    }
+  },
+  "craft": {
+    "sectionIndex": {
+      "number": "01",
+      "label": "Our point of view"
+    },
+    "heading": "The loveliest things are",
+    "headingEmphasis": "never",
+    "headingSuffix": "in a hurry.",
+    "body": "We believe a garment should fit your life, not the other way around. At Sutra, every measure is considered, every stitch has a purpose, and the smallest details are given room to matter.",
+    "handwritten": "A little care goes a long way.",
+    "imageStrip": {
+      "ariaLabel": "Textured cloth, thread and hand-finished details",
+      "labelLeft":  "Made to be kept",
+      "labelRight": "Not just worn"
+    }
+  },
+  "services": {
+    "sectionIndex": {
+      "number": "02",
+      "label": "Made by hand"
+    },
+    "heading": "A stitch for",
+    "headingEmphasis": "every story.",
+    "subheading": "Start with what you have in mind. We'll take it from there, one thoughtful detail at a time.",
+    "items": [
+      {
+        "number": "01",
+        "icon": "⌁",
+        "iconClass": "icon-tailoring",
+        "title": "Made to measure",
+        "description": "Custom tailoring shaped around your fit, your fabric and the way you like to feel.",
+        "mark": "↗"
+      },
+      {
+        "number": "02",
+        "icon": "✳",
+        "iconClass": "icon-embroidery",
+        "title": "Hand embroidery",
+        "description": "Personal flourishes, delicate motifs and heirloom-worthy work, stitched with care.",
+        "mark": "↗"
+      },
+      {
+        "number": "03",
+        "icon": "⌘",
+        "iconClass": "icon-mending",
+        "title": "Thoughtful mending",
+        "description": "A better fit, a second life, or a small repair that lets a favourite piece stay yours.",
+        "mark": "↗"
+      }
+    ]
+  },
+  "process": {
+    "imageAriaLabel": "The quiet, tactile work of a sewing studio",
+    "sectionIndex": {
+      "number": "03",
+      "label": "From first thought to final stitch"
+    },
+    "heading": "Easy as",
+    "headingEmphasis": "threading a needle.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell us your idea",
+        "description": "Share a reference, a garment, or a feeling over WhatsApp."
+      },
+      {
+        "number": "02",
+        "title": "We plan it together",
+        "description": "We'll talk through the details, fabric and finishing touches."
+      },
+      {
+        "number": "03",
+        "title": "Made just for you",
+        "description": "Your piece is carefully stitched, fitted and finished by hand."
+      }
+    ]
+  },
+  "closing": {
+    "flower": "✳",
+    "eyebrow": "Your idea, our hands",
+    "heading": "Shall we make",
+    "headingEmphasis": "something lovely?",
+    "body": "Tell us what you're dreaming up. We'd love to hear about it.",
+    "signoff": "With care, Sutra Studio"
+  },
+  "footer": {
+    "brand": {
+      "ariaLabel": "Sutra Studio, back to top",
+      "href": "#home"
+    },
+    "tagline": "Made slowly, with care.",
+    "backToTop": {
+      "label": "Back to the beginning",
+      "arrow": "↑",
+      "href": "#home"
+    }
+  }
+}
