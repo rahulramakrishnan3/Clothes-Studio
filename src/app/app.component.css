@@ -546,36 +546,83 @@
 
 .site-footer {
   display: flex;
-  min-height: 100px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 0 28px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 16px;
 }
 
-.footer-wordmark .wordmark-symbol {
-  width: 31px;
-  height: 31px;
-  font-size: 1.25rem;
-}
-
-.footer-wordmark .wordmark-copy {
-  font-size: 0.73rem;
-}
-
-.footer-wordmark .wordmark-copy span {
-  font-size: 0.49rem;
-}
-
-.site-footer > span {
+.footer-tagline {
   color: var(--muted);
   font-family: var(--serif);
   font-size: 1.05rem;
   font-style: italic;
 }
 
-.site-footer > a:last-child {
-  font-size: 0.68rem;
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px 32px;
+  color: var(--muted);
+  font-size: 0.75rem;
 }
+
+.footer-address {
+  font-style: normal;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+.footer-phones {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-phone {
+  color: var(--forest);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.78rem;
+  transition: color 180ms ease;
+}
+
+.footer-phone:hover {
+  color: var(--terracotta);
+}
+
+.footer-social-link {
+  color: var(--forest);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-social-link:hover {
+  color: var(--terracotta);
+}
+
+.footer-back-top {
+  align-self: flex-end;
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-back-top:hover {
+  color: var(--terracotta);
+}
+
 
 @media (max-width: 1000px) {
   .site-shell {
@@ -741,13 +788,26 @@
   }
 
   .site-footer {
-    min-height: 88px;
-    flex-wrap: wrap;
-    padding: 17px 0;
+    gap: 14px;
+    padding: 22px 0 20px;
   }
 
-  .site-footer > span {
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-tagline {
     display: none;
+  }
+
+  .footer-contact {
+    gap: 10px 20px;
+    font-size: 0.7rem;
+  }
+
+  .footer-address {
+    max-width: 100%;
   }
 }
 

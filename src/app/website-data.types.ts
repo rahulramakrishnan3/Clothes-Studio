@@ -151,6 +151,25 @@ export interface FooterConfig {
   backToTop: FooterBackToTop;
 }
 
+export interface ContactPhone {
+  label: string;
+  number: string;
+  href: string;
+}
+
+export interface SocialLink {
+  platform: string;
+  handle: string;
+  href: string;
+  ariaLabel: string;
+}
+
+export interface ContactConfig {
+  address: string;
+  phones: ContactPhone[];
+  social: SocialLink[];
+}
+
 export interface WebsiteData {
   site: SiteConfig;
   brand: Brand;
@@ -161,4 +180,5 @@ export interface WebsiteData {
   process: ProcessConfig;
   closing: ClosingConfig;
   footer: FooterConfig;
+  contact: ContactConfig;
 }

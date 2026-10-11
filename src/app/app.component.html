@@ -170,16 +170,35 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
-      <a
-        class="wordmark footer-wordmark"
-        [href]="d.footer.brand.href"
-        [attr.aria-label]="d.footer.brand.ariaLabel"
-      >
-        <span class="wordmark-symbol" aria-hidden="true">{{ d.brand.symbol }}</span>
-        <span class="wordmark-copy">{{ d.brand.name }} <span>{{ d.brand.nameSecondary }}</span></span>
-      </a>
-      <span>{{ d.footer.tagline }}</span>
-      <a [href]="d.footer.backToTop.href">
+      <div class="footer-top">
+        <a
+          class="wordmark footer-wordmark"
+          [href]="d.footer.brand.href"
+          [attr.aria-label]="d.footer.brand.ariaLabel"
+        >
+          <span class="wordmark-symbol" aria-hidden="true">{{ d.brand.symbol }}</span>
+          <span class="wordmark-copy">{{ d.brand.name }} <span>{{ d.brand.nameSecondary }}</span></span>
+        </a>
+        <span class="footer-tagline">{{ d.footer.tagline }}</span>
+      </div>
+
+      <div class="footer-contact">
+        <address class="footer-address">{{ d.contact.address }}</address>
+        <div class="footer-phones">
+          @for (phone of d.contact.phones; track phone.number) {
+            <a [href]="phone.href" class="footer-phone">{{ phone.number }}</a>
+          }
+        </div>
+        <div class="footer-social">
+          @for (link of d.contact.social; track link.platform) {
+            <a [href]="link.href" [attr.aria-label]="link.ariaLabel" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              {{ link.handle }}
+            </a>
+          }
+        </div>
+      </div>
+
+      <a class="footer-back-top" [href]="d.footer.backToTop.href">
         {{ d.footer.backToTop.label }} {{ d.footer.backToTop.arrow }}
       </a>
     </footer>

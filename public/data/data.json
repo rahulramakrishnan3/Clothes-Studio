@@ -1,49 +1,49 @@
 {
   "site": {
-    "title": "Sutra Studio — Bespoke Stitching & Hand Embroidery",
-    "metaDescription": "Thoughtful tailoring, careful mending and hand embroidery, made slowly and just for you at Sutra Studio.",
+    "title": "Nivha By Fashion Cut — Women's & Children's Boutique | Custom Tailoring, Palakkad",
+    "metaDescription": "Custom tailoring, hand embroidery and the Punarnivha upcycling collection. Bridal blouses, lehengas, suits and more — stitched with care in Palakkad, Kerala.",
     "themeColor": "#f8f6ef",
     "lang": "en"
   },
   "brand": {
-    "symbol": "S",
-    "name": "Sutra",
-    "nameSecondary": "Studio",
+    "symbol": "N",
+    "name": "Nivha",
+    "nameSecondary": "By Fashion Cut",
     "homeAnchor": "#home",
-    "ariaLabel": "Sutra Studio home"
+    "ariaLabel": "Nivha By Fashion Cut home"
   },
   "header": {
-    "tagline": "Made slowly, made for you",
+    "tagline": "Stitched with care, made for you",
     "navAriaLabel": "Main navigation",
     "navItems": [
-      { "label": "Our craft",    "href": "#craft"    },
-      { "label": "What we make", "href": "#services" },
-      { "label": "The process",  "href": "#process"  }
+      { "label": "Our story",     "href": "#craft"    },
+      { "label": "What we offer", "href": "#services" },
+      { "label": "How it works",  "href": "#process"  }
     ]
   },
   "hero": {
-    "eyebrow": "Bespoke stitching & hand embroidery",
-    "heading": "Clothes with a little more",
-    "headingEmphasis": "you",
-    "headingSuffix": "in them.",
-    "description": "Thoughtful tailoring, careful mending and embroidery made by hand. Bring us a fabric, a favourite piece, or just an idea — we'll make something that feels like yours.",
+    "eyebrow": "Women's & Children's Boutique · Palakkad",
+    "heading": "Style that's made",
+    "headingEmphasis": "just",
+    "headingSuffix": "for you.",
+    "description": "From bridal blouses and lehengas to Aari embroidery and upcycled sarees — Nivha By Fashion Cut brings your vision to life with careful hands and an eye for detail.",
     "cta": {
       "label": "Enquire on WhatsApp",
       "href": "/api/whatsapp",
-      "ariaLabel": "Enquire with Sutra Studio on WhatsApp",
+      "ariaLabel": "Enquire with Nivha By Fashion Cut on WhatsApp",
       "arrow": "↗"
     },
     "textLink": {
-      "label": "Get to know our craft",
+      "label": "Explore our work",
       "href": "#craft",
       "arrowLabel": "↓"
     },
     "note": {
-      "line1": "Good clothes hold a story.",
-      "line2": "Let's stitch yours in."
+      "line1": "Every stitch tells your story.",
+      "line2": "Let us help you tell it."
     },
     "art": {
-      "ariaLabel": "A close-up of hand-finished fabric and tailoring",
+      "ariaLabel": "A close-up of hand-finished fabric and tailoring at Nivha By Fashion Cut",
       "stamp": {
         "line1": "Made with",
         "line2": "intention"
@@ -58,77 +58,77 @@
   "craft": {
     "sectionIndex": {
       "number": "01",
-      "label": "Our point of view"
+      "label": "Our story"
     },
-    "heading": "The loveliest things are",
-    "headingEmphasis": "never",
-    "headingSuffix": "in a hurry.",
-    "body": "We believe a garment should fit your life, not the other way around. At Sutra, every measure is considered, every stitch has a purpose, and the smallest details are given room to matter.",
-    "handwritten": "A little care goes a long way.",
+    "heading": "Fashion that fits",
+    "headingEmphasis": "your",
+    "headingSuffix": "life.",
+    "body": "At Nivha By Fashion Cut, we believe every woman and child deserves clothes crafted around them — not the other way around. From the first measurement to the final stitch, every detail is handled with patience, skill, and genuine care for the person wearing it.",
+    "handwritten": "Your style, our craft.",
     "imageStrip": {
-      "ariaLabel": "Textured cloth, thread and hand-finished details",
-      "labelLeft":  "Made to be kept",
-      "labelRight": "Not just worn"
+      "ariaLabel": "Fabrics, threads and detailed hand embroidery work at Nivha By Fashion Cut",
+      "labelLeft":  "Crafted to last",
+      "labelRight": "Worn with love"
     }
   },
   "services": {
     "sectionIndex": {
       "number": "02",
-      "label": "Made by hand"
+      "label": "What we offer"
     },
     "heading": "A stitch for",
-    "headingEmphasis": "every story.",
-    "subheading": "Start with what you have in mind. We'll take it from there, one thoughtful detail at a time.",
+    "headingEmphasis": "every occasion.",
+    "subheading": "Tell us what you need. We'll bring it to life — one careful stitch at a time.",
     "items": [
       {
         "number": "01",
         "icon": "⌁",
         "iconClass": "icon-tailoring",
-        "title": "Made to measure",
-        "description": "Custom tailoring shaped around your fit, your fabric and the way you like to feel.",
+        "title": "Custom Tailoring",
+        "description": "Bridal blouses, lehengas, suits, churidars, crop tops and skirts — stitched to your exact measurements and taste.",
         "mark": "↗"
       },
       {
         "number": "02",
         "icon": "✳",
         "iconClass": "icon-embroidery",
-        "title": "Hand embroidery",
-        "description": "Personal flourishes, delicate motifs and heirloom-worthy work, stitched with care.",
+        "title": "Embroidery",
+        "description": "Hand work embroidery, machine embroidery and specialist Aari embroidery — delicate detailing that makes every piece memorable.",
         "mark": "↗"
       },
       {
         "number": "03",
         "icon": "⌘",
         "iconClass": "icon-mending",
-        "title": "Thoughtful mending",
-        "description": "A better fit, a second life, or a small repair that lets a favourite piece stay yours.",
+        "title": "Punarnivha Collection",
+        "description": "Our fabric revival service transforms old sarees — including Banarasi — and leftover fabrics into modern palazzo pants, jackets, crop top cholis and shrugs.",
         "mark": "↗"
       }
     ]
   },
   "process": {
-    "imageAriaLabel": "The quiet, tactile work of a sewing studio",
+    "imageAriaLabel": "The quiet, tactile work of the Nivha By Fashion Cut studio",
     "sectionIndex": {
       "number": "03",
-      "label": "From first thought to final stitch"
+      "label": "From idea to wardrobe"
     },
-    "heading": "Easy as",
-    "headingEmphasis": "threading a needle.",
+    "heading": "Simple as",
+    "headingEmphasis": "a single message.",
     "steps": [
       {
         "number": "01",
-        "title": "Tell us your idea",
-        "description": "Share a reference, a garment, or a feeling over WhatsApp."
+        "title": "Share your idea",
+        "description": "Send us a reference, a garment, or just a feeling over WhatsApp. We'll listen carefully."
       },
       {
         "number": "02",
-        "title": "We plan it together",
-        "description": "We'll talk through the details, fabric and finishing touches."
+        "title": "We plan together",
+        "description": "We discuss fabric, fit, embroidery and every finishing detail to make sure it's exactly right."
       },
       {
         "number": "03",
-        "title": "Made just for you",
-        "description": "Your piece is carefully stitched, fitted and finished by hand."
+        "title": "Crafted for you",
+        "description": "Your piece is carefully stitched, fitted and finished by hand — ready to wear and keep."
       }
     ]
   },
@@ -136,20 +136,35 @@
     "flower": "✳",
     "eyebrow": "Your idea, our hands",
     "heading": "Shall we make",
-    "headingEmphasis": "something lovely?",
+    "headingEmphasis": "something beautiful?",
     "body": "Tell us what you're dreaming up. We'd love to hear about it.",
-    "signoff": "With care, Sutra Studio"
+    "signoff": "With care, Nivha By Fashion Cut"
   },
   "footer": {
     "brand": {
-      "ariaLabel": "Sutra Studio, back to top",
+      "ariaLabel": "Nivha By Fashion Cut, back to top",
       "href": "#home"
     },
-    "tagline": "Made slowly, with care.",
+    "tagline": "Stitched with care, made for you.",
     "backToTop": {
-      "label": "Back to the beginning",
+      "label": "Back to the top",
       "arrow": "↑",
       "href": "#home"
     }
+  },
+  "contact": {
+    "address": "PMC Complex, Near Sree Krishna Sweets, Robinson Road, Koppam Junction, Palakkad, Kerala – 678001",
+    "phones": [
+      { "label": "Primary", "number": "8078908616", "href": "tel:+918078908616" },
+      { "label": "Secondary", "number": "9349136613", "href": "tel:+919349136613" }
+    ],
+    "social": [
+      {
+        "platform": "Instagram",
+        "handle": "@nivha.stories",
+        "href": "https://www.instagram.com/nivha.stories",
+        "ariaLabel": "Follow Nivha By Fashion Cut on Instagram"
+      }
+    ]
   }
 }
