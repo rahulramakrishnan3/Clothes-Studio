@@ -15,17 +15,20 @@ export class AppComponent {
 
   protected onWhatsAppClick(event: MouseEvent, encodedPayload?: string, fallbackHref?: string): void {
     event.preventDefault();
+    let targetUrl = '';
     if (encodedPayload) {
       try {
-        const decodedUrl = atob(encodedPayload);
-        window.open(decodedUrl, '_blank', 'noopener,noreferrer');
-        return;
+        targetUrl = atob(encodedPayload);
       } catch (err) {
         console.error('Failed to decode link', err);
       }
     }
-    if (fallbackHref && fallbackHref !== '#') {
-      window.open(fallbackHref, '_blank', 'noopener,noreferrer');
+    if (!targetUrl && fallbackHref && fallbackHref !== '#') {
+      targetUrl = fallbackHref;
+    }
+
+    if (targetUrl) {
+      window.location.assign(targetUrl);
     }
   }
 }
