@@ -22,6 +22,6 @@ export class AppComponent {
         console.error('Error decoding WhatsApp payload', e);
       }
     }
-    return cta?.href && cta.href !== '#' ? cta.href : 'https://wa.me/918078908616';
+    return cta?.href && cta.href !== '#' ? cta.href : 'https://wa.me/919349136613';
   }
 }
