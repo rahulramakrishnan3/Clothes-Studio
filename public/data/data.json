@@ -29,7 +29,8 @@
     "description": "From bridal blouses and lehengas to Aari embroidery and upcycled sarees — Nivha By Fashion Cut brings your vision to life with careful hands and an eye for detail.",
     "cta": {
       "label": "Enquire on WhatsApp",
-      "href": "/api/whatsapp",
+      "href": "#",
+      "encodedPayload": "aHR0cHM6Ly93YS5tZS85MTgwNzg5MDg2MTY/dGV4dD1IZWxsbyUyME5pdmhhJTIwQnklMjBGYXNoaW9uJTIwQ3V0JTJDJTIwSSUyMHdvdWxkJTIwbGlrZSUyMHRvJTIwZW5xdWlyZSUyMGFib3V0JTIwY3VzdG9tJTIwdGFpbG9yaW5nJTIwYW5kJTIwZW1icm9pZGVyeS4=",
       "ariaLabel": "Enquire with Nivha By Fashion Cut on WhatsApp",
       "arrow": "↗"
     },

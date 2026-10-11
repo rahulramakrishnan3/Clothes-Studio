@@ -31,6 +31,7 @@ export interface HeroCta {
   href: string;
   ariaLabel: string;
   arrow: string;
+  encodedPayload?: string;
 }
 
 export interface HeroTextLink {
