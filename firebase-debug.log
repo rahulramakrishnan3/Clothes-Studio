@@ -1,0 +1,209 @@
+[debug] [2026-10-12T08:37:03.546Z] ----------------------------------------------------------------------
+[debug] [2026-10-12T08:37:03.549Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --non-interactive
+[debug] [2026-10-12T08:37:03.549Z] CLI Version:   15.33.0
+[debug] [2026-10-12T08:37:03.550Z] Platform:      win32
+[debug] [2026-10-12T08:37:03.550Z] Node Version:  v24.20.0
+[debug] [2026-10-12T08:37:03.550Z] Detected Agent: antigravity
+[debug] [2026-10-12T08:37:03.550Z] Time:          Mon Oct 12 2026 14:07:03 GMT+0530 (India Standard Time)
+[debug] [2026-10-12T08:37:03.550Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-12T08:37:32.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-12T08:37:32.043Z] > authorizing via signed-in user (rahulramakrishnan512@gmail.com)
+[debug] [2026-10-12T08:37:32.043Z] [iam] checking project nivha-fashion-cut for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-12T08:37:32.053Z] Checked if tokens are valid: false, expires at: 1791715171185
+[debug] [2026-10-12T08:37:32.053Z] Checked if tokens are valid: false, expires at: 1791715171185
+[debug] [2026-10-12T08:37:32.053Z] > refreshing access token with scopes: []
+[debug] [2026-10-12T08:37:32.055Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-10-12T08:37:32.055Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-12T08:37:32.239Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-10-12T08:37:32.239Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-12T08:37:32.254Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions [none]
+[debug] [2026-10-12T08:37:32.255Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions  x-goog-user-project=nivha-fashion-cut
+[debug] [2026-10-12T08:37:32.255Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-12T08:38:03.557Z] ----------------------------------------------------------------------
+[debug] [2026-10-12T08:38:03.560Z] Command:       C:\Users\rahul\Desktop\PERSONAL PROJECTS\Home\landing-page-app\node_modules\node\bin\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --non-interactive
+[debug] [2026-10-12T08:38:03.560Z] CLI Version:   15.33.0
+[debug] [2026-10-12T08:38:03.561Z] Platform:      win32
+[debug] [2026-10-12T08:38:03.561Z] Node Version:  v26.11.1
+[debug] [2026-10-12T08:38:03.561Z] Detected Agent: antigravity
+[debug] [2026-10-12T08:38:03.561Z] Time:          Mon Oct 12 2026 14:08:03 GMT+0530 (India Standard Time)
+[debug] [2026-10-12T08:38:03.562Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-12T08:38:05.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-12T08:38:05.745Z] > authorizing via signed-in user (rahulramakrishnan512@gmail.com)
+[debug] [2026-10-12T08:38:05.745Z] [iam] checking project nivha-fashion-cut for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-12T08:38:05.753Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:05.754Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:05.754Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions [none]
+[debug] [2026-10-12T08:38:05.754Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions  x-goog-user-project=nivha-fashion-cut
+[debug] [2026-10-12T08:38:05.754Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-12T08:38:07.259Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions 200
+[debug] [2026-10-12T08:38:07.259Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-12T08:38:07.260Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:07.260Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:07.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut [none]
+[debug] [2026-10-12T08:38:07.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut 200
+[debug] [2026-10-12T08:38:07.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut {"projectId":"nivha-fashion-cut","projectNumber":"689561759045","displayName":"Nivha By Fashion Cut","name":"projects/nivha-fashion-cut","resources":{"hostingSite":"nivha-fashion-cut"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_d9ac70a7-436d-4e76-8bbe-77db2f5e65a4"}
+[info] 
+[info] === Deploying to 'nivha-fashion-cut'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-12T08:38:07.750Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:07.750Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:07.750Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut [none]
+[debug] [2026-10-12T08:38:08.850Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut 200
+[debug] [2026-10-12T08:38:08.850Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut","defaultUrl":"https://nivha-fashion-cut.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-10-12T08:38:08.854Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:08.854Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:08.855Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions [none]
+[debug] [2026-10-12T08:38:08.856Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-10-12T08:38:09.872Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions 200
+[debug] [2026-10-12T08:38:09.872Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[nivha-fashion-cut]: beginning deploy... 
+[info] i  hosting[nivha-fashion-cut]: found 8 files in dist/landing-page-app/browser 
+[debug] [2026-10-12T08:38:09.884Z] [hosting] uploading with 200 concurrency
+[debug] [2026-10-12T08:38:09.933Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:09.933Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:09.934Z] [hosting] hash cache [ZGlzdFxsYW5kaW5nLXBhZ2UtYXBwXGJyb3dzZXI] stored for 8 files
+[debug] [2026-10-12T08:38:09.934Z] [hosting][hash queue][FINAL] {"max":23,"min":0,"avg":5.25,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":27}
+[debug] [2026-10-12T08:38:09.935Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae:populateFiles [none]
+[debug] [2026-10-12T08:38:09.935Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae:populateFiles {"files":{"/favicon.ico":"a905b13e228420df3dbe746dfb656d37a49736494c0737d00e007c8dc7319912","/embroidery-still-life.svg":"5bf4d63087ff17df54612e250e6f326716118244e513c336ea51c0a7ab88a470","/atelier-hoop.svg":"c1dbbf430f4735605150f528bfb3cc2225370a4a86776781c0fc8a18c9d23a5d","/styles-QZMLZVRI.css":"8736230653d0e87cb96bcc41d2a3e5a9718ef6b072ac9575d17fdc05f8dbf194","/index.html":"56249ebdc88149e8ea3d0d15ebae9296714625ef7c96399d93f3a9eb7554b821","/polyfills-LVNOU2XZ.js":"abfdd1aeb2f4ed35cb69dea24ff76129286f3d172701b951b3ad47f6d472624e","/main-VP3P2GIX.js":"502beb308dceca5d789c02a666a970cadf5eb21c0b4b7ff8fb9440a8aa8e6e1d","/data/data.json":"fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0"}}
+[debug] [2026-10-12T08:38:10.841Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae:populateFiles 200
+[debug] [2026-10-12T08:38:10.841Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae:populateFiles {"uploadRequiredHashes":["fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/a3def64cbfa058ae/files"}
+[debug] [2026-10-12T08:38:10.842Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:10.842Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:10.843Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/a3def64cbfa058ae/files/fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0 [none]
+[debug] [2026-10-12T08:38:10.843Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/a3def64cbfa058ae/files/fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0 [stream]
+[debug] [2026-10-12T08:38:10.848Z] [hosting][populate queue][FINAL] {"max":910,"min":910,"avg":910,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":915}
+[debug] [2026-10-12T08:38:10.848Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2026-10-12T08:38:12.343Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/a3def64cbfa058ae/files/fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0 200
+[debug] [2026-10-12T08:38:12.343Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/a3def64cbfa058ae/files/fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0 [stream]
+[debug] [2026-10-12T08:38:12.343Z] [hosting][upload queue][FINAL] {"max":1501,"min":1501,"avg":1501,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1501}
+[info] i  hosting: upload complete 
+[info] +  hosting[nivha-fashion-cut]: file upload complete 
+[debug] [2026-10-12T08:38:12.344Z] [hosting] deploy completed after 2469ms
+[debug] [2026-10-12T08:38:12.344Z] [
+  {
+    "config": {
+      "public": "dist/landing-page-app/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "nivha-fashion-cut"
+    },
+    "version": "projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae"
+  }
+]
+[info] i  hosting[nivha-fashion-cut]: finalizing version... 
+[debug] [2026-10-12T08:38:12.347Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:12.347Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:12.348Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae updateMask=status%2Cconfig
+[debug] [2026-10-12T08:38:12.348Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/a3def64cbfa058ae {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-10-12T08:38:31.927Z] ----------------------------------------------------------------------
+[debug] [2026-10-12T08:38:31.929Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rahul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project nivha-fashion-cut --debug
+[debug] [2026-10-12T08:38:31.929Z] CLI Version:   15.33.0
+[debug] [2026-10-12T08:38:31.929Z] Platform:      win32
+[debug] [2026-10-12T08:38:31.930Z] Node Version:  v24.20.0
+[debug] [2026-10-12T08:38:31.930Z] Detected Agent: antigravity
+[debug] [2026-10-12T08:38:31.930Z] Time:          Mon Oct 12 2026 14:08:31 GMT+0530 (India Standard Time)
+[debug] [2026-10-12T08:38:31.930Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-12T08:38:33.105Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-12T08:38:33.105Z] > authorizing via signed-in user (rahulramakrishnan512@gmail.com)
+[debug] [2026-10-12T08:38:33.106Z] [iam] checking project nivha-fashion-cut for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-12T08:38:33.114Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:33.114Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:33.115Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions [none]
+[debug] [2026-10-12T08:38:33.116Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions  x-goog-user-project=nivha-fashion-cut
+[debug] [2026-10-12T08:38:33.116Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-12T08:38:34.609Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions 200
+[debug] [2026-10-12T08:38:34.609Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nivha-fashion-cut:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-12T08:38:34.610Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:34.610Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:34.610Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut [none]
+[debug] [2026-10-12T08:38:36.736Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut 200
+[debug] [2026-10-12T08:38:36.736Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nivha-fashion-cut {"projectId":"nivha-fashion-cut","projectNumber":"689561759045","displayName":"Nivha By Fashion Cut","name":"projects/nivha-fashion-cut","resources":{"hostingSite":"nivha-fashion-cut"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_d9ac70a7-436d-4e76-8bbe-77db2f5e65a4"}
+[info] 
+[info] === Deploying to 'nivha-fashion-cut'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-12T08:38:36.741Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:36.741Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:36.742Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut [none]
+[debug] [2026-10-12T08:38:37.927Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut 200
+[debug] [2026-10-12T08:38:37.927Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut","defaultUrl":"https://nivha-fashion-cut.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-10-12T08:38:37.930Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:37.930Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:37.931Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions [none]
+[debug] [2026-10-12T08:38:37.931Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-10-12T08:38:38.867Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions 200
+[debug] [2026-10-12T08:38:38.867Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[nivha-fashion-cut]: beginning deploy... 
+[info] i  hosting[nivha-fashion-cut]: found 8 files in dist/landing-page-app/browser 
+[debug] [2026-10-12T08:38:38.878Z] [hosting] uploading with 200 concurrency
+[debug] [2026-10-12T08:38:38.880Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:38.880Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:38.881Z] [hosting] hash cache [ZGlzdFxsYW5kaW5nLXBhZ2UtYXBwXGJyb3dzZXI] stored for 8 files
+[debug] [2026-10-12T08:38:38.881Z] [hosting][hash queue][FINAL] {"max":1,"min":1,"avg":1,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":2}
+[debug] [2026-10-12T08:38:38.881Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7:populateFiles [none]
+[debug] [2026-10-12T08:38:38.881Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7:populateFiles {"files":{"/styles-QZMLZVRI.css":"8736230653d0e87cb96bcc41d2a3e5a9718ef6b072ac9575d17fdc05f8dbf194","/polyfills-LVNOU2XZ.js":"abfdd1aeb2f4ed35cb69dea24ff76129286f3d172701b951b3ad47f6d472624e","/main-VP3P2GIX.js":"502beb308dceca5d789c02a666a970cadf5eb21c0b4b7ff8fb9440a8aa8e6e1d","/index.html":"56249ebdc88149e8ea3d0d15ebae9296714625ef7c96399d93f3a9eb7554b821","/favicon.ico":"a905b13e228420df3dbe746dfb656d37a49736494c0737d00e007c8dc7319912","/embroidery-still-life.svg":"5bf4d63087ff17df54612e250e6f326716118244e513c336ea51c0a7ab88a470","/atelier-hoop.svg":"c1dbbf430f4735605150f528bfb3cc2225370a4a86776781c0fc8a18c9d23a5d","/data/data.json":"fc82c496902ff73fe75e2ce2b2f213c719b5ba143c16249feb35f825cb4c7bf0"}}
+[debug] [2026-10-12T08:38:39.772Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7:populateFiles 200
+[debug] [2026-10-12T08:38:39.772Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/nivha-fashion-cut/versions/346bca7b2e7869c7/files"}
+[debug] [2026-10-12T08:38:39.772Z] [hosting][populate queue][FINAL] {"max":892,"min":892,"avg":892,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":892}
+[debug] [2026-10-12T08:38:39.772Z] [hosting] uploads queued: 0
+[debug] [2026-10-12T08:38:39.773Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1791794319773}
+[info] i  hosting: upload complete 
+[info] +  hosting[nivha-fashion-cut]: file upload complete 
+[debug] [2026-10-12T08:38:39.773Z] [hosting] deploy completed after 903ms
+[debug] [2026-10-12T08:38:39.773Z] [
+  {
+    "config": {
+      "public": "dist/landing-page-app/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "nivha-fashion-cut"
+    },
+    "version": "projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7"
+  }
+]
+[info] i  hosting[nivha-fashion-cut]: finalizing version... 
+[debug] [2026-10-12T08:38:39.775Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:39.775Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:39.775Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7 updateMask=status%2Cconfig
+[debug] [2026-10-12T08:38:39.775Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-10-12T08:38:40.442Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7 200
+[debug] [2026-10-12T08:38:40.442Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7 {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-12T08:38:37.833205Z","createUser":{"email":"rahulramakrishnan512@gmail.com"},"finalizeTime":"2026-10-12T08:38:39.868378Z","finalizeUser":{"email":"rahulramakrishnan512@gmail.com"}}
+[debug] [2026-10-12T08:38:40.442Z] [hosting] finalized version for nivha-fashion-cut:[object Object]
+[info] +  hosting[nivha-fashion-cut]: version finalized 
+[info] i  hosting[nivha-fashion-cut]: releasing new version... 
+[debug] [2026-10-12T08:38:40.443Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:40.443Z] Checked if tokens are valid: true, expires at: 1791797851239
+[debug] [2026-10-12T08:38:40.443Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases versionName=projects%2Fnivha-fashion-cut%2Fsites%2Fnivha-fashion-cut%2Fversions%2F346bca7b2e7869c7
+[debug] [2026-10-12T08:38:40.443Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases {}
+[debug] [2026-10-12T08:38:41.288Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases 200
+[debug] [2026-10-12T08:38:41.289Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases/1791794319972000","version":{"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-12T08:38:37.833205Z","createUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"},"finalizeTime":"2026-10-12T08:38:39.868378Z","finalizeUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"}},"type":"DEPLOY","releaseTime":"2026-10-12T08:38:39.972Z","releaseUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"}}
+[debug] [2026-10-12T08:38:41.289Z] [hosting] release: {"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/channels/live/releases/1791794319972000","version":{"name":"projects/nivha-fashion-cut/sites/nivha-fashion-cut/versions/346bca7b2e7869c7","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-10-12T08:38:37.833205Z","createUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"},"finalizeTime":"2026-10-12T08:38:39.868378Z","finalizeUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"}},"type":"DEPLOY","releaseTime":"2026-10-12T08:38:39.972Z","releaseUser":{"email":"rahulramakrishnan512@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKWzftlezfvnRMCgfmWpH4ZuqAusPVeY0_vJjcaYqnSNUyjQx0=mo"}}
+[info] +  hosting[nivha-fashion-cut]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/nivha-fashion-cut/overview
+[info] Hosting URL: https://nivha-fashion-cut.web.app
