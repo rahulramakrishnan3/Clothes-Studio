@@ -132,6 +132,7 @@ export interface ClosingConfig {
   headingEmphasis: string;
   body: string;
   signoff: string;
+  cta: HeroCta;
 }
 
 export interface FooterBrand {
@@ -148,12 +149,20 @@ export interface FooterBackToTop {
 export interface FooterConfig {
   brand: FooterBrand;
   tagline: string;
+  copyrightYear: number;
   backToTop: FooterBackToTop;
+  navItems: NavItem[];
 }
 
 export interface ContactPhone {
   label: string;
   number: string;
+  href: string;
+}
+
+export interface ContactEmail {
+  label: string;
+  address: string;
   href: string;
 }
 
@@ -166,7 +175,9 @@ export interface SocialLink {
 
 export interface ContactConfig {
   address: string;
+  addressMapUrl?: string;
   phones: ContactPhone[];
+  email: ContactEmail;
   social: SocialLink[];
 }
 

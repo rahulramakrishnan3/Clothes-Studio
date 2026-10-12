@@ -18,7 +18,8 @@
     "navItems": [
       { "label": "Our story",     "href": "#craft"    },
       { "label": "What we offer", "href": "#services" },
-      { "label": "How it works",  "href": "#process"  }
+      { "label": "How it works",  "href": "#process"  },
+      { "label": "Enquire",       "href": "#enquire"  }
     ]
   },
   "hero": {
@@ -137,8 +138,14 @@
     "eyebrow": "Your idea, our hands",
     "heading": "Shall we make",
     "headingEmphasis": "something beautiful?",
-    "body": "Tell us what you're dreaming up. We'd love to hear about it.",
-    "signoff": "With care, Nivha By Fashion Cut"
+    "body": "Tell us what you're dreaming up. Send us a quick note below or connect directly on WhatsApp.",
+    "signoff": "With care, Nivha By Fashion Cut",
+    "cta": {
+      "label": "Chat with Us on WhatsApp",
+      "href": "https://wa.me/918078908616?text=Hello%20Nivha%20By%20Fashion%20Cut,%20I'd%20love%20to%20discuss%20a%20tailoring%20project.",
+      "ariaLabel": "Chat with Nivha By Fashion Cut on WhatsApp",
+      "arrow": "↗"
+    }
   },
   "footer": {
     "brand": {
@@ -146,18 +153,31 @@
       "href": "#home"
     },
     "tagline": "Stitched with care, made for you.",
+    "copyrightYear": 2026,
     "backToTop": {
       "label": "Back to the top",
       "arrow": "↑",
       "href": "#home"
-    }
+    },
+    "navItems": [
+      { "label": "Our story",     "href": "#craft"    },
+      { "label": "What we offer", "href": "#services" },
+      { "label": "How it works",  "href": "#process"  },
+      { "label": "Enquire",       "href": "#enquire"  }
+    ]
   },
   "contact": {
     "address": "PMC Complex, Near Sree Krishna Sweets, Robinson Road, Koppam Junction, Palakkad, Kerala – 678001",
+    "addressMapUrl": "https://maps.google.com/?q=Robinson+Road,+Koppam+Junction,+Palakkad,+Kerala+678001",
     "phones": [
       { "label": "Primary", "number": "8078908616", "href": "tel:+918078908616" },
       { "label": "Secondary", "number": "9349136613", "href": "tel:+919349136613" }
     ],
+    "email": {
+      "label": "Email",
+      "address": "nivhaboutique@gmail.com",
+      "href": "mailto:nivhaboutique@gmail.com"
+    },
     "social": [
       {
         "platform": "Instagram",

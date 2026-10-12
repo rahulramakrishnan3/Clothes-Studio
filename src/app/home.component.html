@@ -1,0 +1,387 @@
+@if (data(); as d) {
+  <div class="site-shell">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <a class="wordmark" [href]="d.brand.homeAnchor" [attr.aria-label]="d.brand.ariaLabel">
+        <span class="wordmark-symbol" aria-hidden="true">{{ d.brand.symbol }}</span>
+        <span class="wordmark-copy">{{ d.brand.name }} <span>{{ d.brand.nameSecondary }}</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-nav" [attr.aria-label]="d.header.navAriaLabel">
+        @for (item of d.header.navItems; track item.href) {
+          <a [href]="item.href">{{ item.label }}</a>
+        }
+      </nav>
+
+      <span class="header-note"><span aria-hidden="true"></span> {{ d.header.tagline }}</span>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button
+        type="button"
+        class="mobile-menu-toggle"
+        (click)="toggleMobileMenu()"
+        [attr.aria-expanded]="mobileMenuOpen()"
+        aria-controls="mobile-nav-drawer"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar" [class.open]="mobileMenuOpen()"></span>
+        <span class="hamburger-bar" [class.open]="mobileMenuOpen()"></span>
+        <span class="hamburger-bar" [class.open]="mobileMenuOpen()"></span>
+      </button>
+    </header>
+
+    <!-- Mobile Drawer Overlay & Menu -->
+    @if (mobileMenuOpen()) {
+      <div class="mobile-drawer-backdrop" (click)="closeMobileMenu()" aria-hidden="true"></div>
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+        <div class="mobile-drawer-header">
+          <span class="mobile-drawer-title">{{ d.brand.name }} {{ d.brand.nameSecondary }}</span>
+          <button type="button" class="mobile-drawer-close" (click)="closeMobileMenu()" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="mobile-drawer-links">
+          @for (item of d.header.navItems; track item.href) {
+            <a [href]="item.href" (click)="closeMobileMenu()">{{ item.label }}</a>
+          }
+        </nav>
+        <div class="mobile-drawer-footer">
+          <a
+            class="mobile-drawer-cta"
+            [href]="d.hero.cta.href"
+            target="_blank"
+            rel="noopener noreferrer"
+            (click)="closeMobileMenu()"
+          >
+            <span>{{ d.hero.cta.label }}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <div class="mobile-drawer-contact">
+            <a [href]="d.contact.phones[0].href" class="mobile-contact-pill">📞 {{ d.contact.phones[0].number }}</a>
+            <a [href]="d.contact.email.href" class="mobile-contact-pill">✉️ {{ d.contact.email.address }}</a>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- ===== MAIN ===== -->
+    <main [id]="d.brand.homeAnchor.slice(1)">
+
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> {{ d.hero.eyebrow }}</p>
+          <h1 id="hero-title">
+            {{ d.hero.heading }} <em>{{ d.hero.headingEmphasis }}</em> {{ d.hero.headingSuffix }}
+          </h1>
+          <p class="hero-description">{{ d.hero.description }}</p>
+
+          <a
+            class="whatsapp-button"
+            [href]="d.hero.cta.href"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="d.hero.cta.ariaLabel"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.4 3.6A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a12 12 0 0 0 5.6 1.4h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.6-8.2ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.7 9.7 0 0 1-1.5-5.2c0-5.4 4.5-9.8 9.9-9.8 2.6 0 5.1 1 7 2.9a9.7 9.7 0 0 1 2.9 7c0 5.4-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5L9.3 7.6c-.2-.4-.5-.3-.7-.3h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2 0-.1-.2-.2-.5-.4Z"/>
+            </svg>
+            <span>{{ d.hero.cta.label }}</span>
+            <span class="button-arrow" aria-hidden="true">{{ d.hero.cta.arrow }}</span>
+          </a>
+
+          <a class="text-link" [href]="d.hero.textLink.href">
+            {{ d.hero.textLink.label }} <span aria-hidden="true">{{ d.hero.textLink.arrowLabel }}</span>
+          </a>
+
+          <div class="hero-note">
+            <span class="note-rule" aria-hidden="true"></span>
+            <p>{{ d.hero.note.line1 }}<br /><strong>{{ d.hero.note.line2 }}</strong></p>
+          </div>
+        </div>
+
+        <div class="hero-art" [attr.aria-label]="d.hero.art.ariaLabel">
+          <div class="hero-image"></div>
+          <div class="image-stamp" aria-hidden="true">
+            <span>{{ d.hero.art.stamp.line1 }}</span>
+            <span>{{ d.hero.art.stamp.line2 }}</span>
+            <svg viewBox="0 0 80 16">
+              <path d="M2 8c10-8 18 8 28 0s18 8 28 0 14 4 20 0" />
+            </svg>
+          </div>
+          <div class="image-caption">
+            <span>{{ d.hero.art.caption.left }}</span>
+            <span>{{ d.hero.art.caption.right }}</span>
+          </div>
+          <span class="art-spark" aria-hidden="true">{{ d.hero.art.spark }}</span>
+        </div>
+      </section>
+
+      <!-- Craft Section -->
+      <section class="craft-section" id="craft" aria-labelledby="craft-title">
+        <div class="section-index">
+          <span>{{ d.craft.sectionIndex.number }}</span>
+          <span class="index-line"></span>
+          <span>{{ d.craft.sectionIndex.label }}</span>
+        </div>
+        <div class="craft-intro">
+          <h2 id="craft-title">
+            {{ d.craft.heading }} <em>{{ d.craft.headingEmphasis }}</em> {{ d.craft.headingSuffix }}
+          </h2>
+          <div class="craft-copy">
+            <p>{{ d.craft.body }}</p>
+            <p class="handwritten">{{ d.craft.handwritten }}</p>
+          </div>
+        </div>
+        <div
+          class="craft-image-strip"
+          role="img"
+          [attr.aria-label]="d.craft.imageStrip.ariaLabel"
+        >
+          <div class="strip-label">
+            <span>{{ d.craft.imageStrip.labelLeft }}</span>
+            <span>{{ d.craft.imageStrip.labelRight }}</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="services-heading">
+          <div>
+            <div class="section-index">
+              <span>{{ d.services.sectionIndex.number }}</span>
+              <span class="index-line"></span>
+              <span>{{ d.services.sectionIndex.label }}</span>
+            </div>
+            <h2 id="services-title">
+              {{ d.services.heading }} <em>{{ d.services.headingEmphasis }}</em>
+            </h2>
+          </div>
+          <p>{{ d.services.subheading }}</p>
+        </div>
+
+        <div class="service-list">
+          @for (svc of d.services.items; track svc.number) {
+            <a
+              class="service-card"
+              [href]="d.hero.cta.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="'Enquire about ' + svc.title + ' on WhatsApp'"
+            >
+              <span class="service-number">{{ svc.number }}</span>
+              <div class="service-icon" [class]="'service-icon ' + svc.iconClass" aria-hidden="true">{{ svc.icon }}</div>
+              <div class="service-content">
+                <h3>{{ svc.title }}</h3>
+                <p>{{ svc.description }}</p>
+              </div>
+              <span class="service-mark" aria-hidden="true">{{ svc.mark }}</span>
+            </a>
+          }
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="process-image" role="img" [attr.aria-label]="d.process.imageAriaLabel"></div>
+        <div class="process-copy">
+          <div class="section-index">
+            <span>{{ d.process.sectionIndex.number }}</span>
+            <span class="index-line"></span>
+            <span>{{ d.process.sectionIndex.label }}</span>
+          </div>
+          <h2 id="process-title">
+            {{ d.process.heading }}<br /><em>{{ d.process.headingEmphasis }}</em>
+          </h2>
+          <ol class="process-steps">
+            @for (step of d.process.steps; track step.number) {
+              <li>
+                <span>{{ step.number }}</span>
+                <div>
+                  <strong>{{ step.title }}</strong>
+                  <p>{{ step.description }}</p>
+                </div>
+              </li>
+            }
+          </ol>
+        </div>
+      </section>
+
+      <!-- Closing & Quick Enquiry Section -->
+      <section class="closing-section" id="enquire" aria-labelledby="closing-title">
+        <span class="closing-flower" aria-hidden="true">{{ d.closing.flower }}</span>
+        <p class="eyebrow">{{ d.closing.eyebrow }}</p>
+        <h2 id="closing-title">
+          {{ d.closing.heading }}<br /><em>{{ d.closing.headingEmphasis }}</em>
+        </h2>
+        <p class="closing-copy">{{ d.closing.body }}</p>
+
+        <!-- Quick Enquiry Form -->
+        <div class="enquiry-card">
+          <form class="enquiry-form" (ngSubmit)="submitEnquiry()" novalidate>
+            @if (formSuccess()) {
+              <div class="form-alert form-alert-success" role="alert">
+                <span class="alert-icon">✓</span>
+                <span>{{ formSuccess() }}</span>
+              </div>
+            }
+
+            @if (formError()) {
+              <div class="form-alert form-alert-error" role="alert">
+                <span class="alert-icon">⚠</span>
+                <span>{{ formError() }}</span>
+              </div>
+            }
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="enquiry-name">Your Name *</label>
+                <input
+                  id="enquiry-name"
+                  type="text"
+                  name="name"
+                  [(ngModel)]="enquiryName"
+                  placeholder="e.g. Anjali Menon"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="enquiry-phone">Phone Number *</label>
+                <input
+                  id="enquiry-phone"
+                  type="tel"
+                  name="phone"
+                  [(ngModel)]="enquiryPhone"
+                  placeholder="e.g. 9876543210"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="enquiry-service">What are you looking for?</label>
+              <select id="enquiry-service" name="service" [(ngModel)]="enquiryService">
+                <option value="">Select a service (optional)</option>
+                <option value="Bridal Blouse / Lehenga">Bridal Blouse / Lehenga</option>
+                <option value="Custom Tailoring (Suit/Churidar/Crop Top)">Custom Tailoring (Suit / Churidar / Crop Top)</option>
+                <option value="Hand / Aari Embroidery">Hand / Aari Embroidery</option>
+                <option value="Punarnivha Saree Upcycling">Punarnivha Saree Upcycling</option>
+                <option value="Children's Wear">Children's Wear</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="enquiry-message">Tell us about your requirement</label>
+              <textarea
+                id="enquiry-message"
+                name="message"
+                [(ngModel)]="enquiryMessage"
+                rows="3"
+                placeholder="Fabric details, reference ideas, or preferred delivery date..."
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="form-submit-button">
+                <span>Send Enquiry via WhatsApp</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <span class="form-or">or</span>
+              <a
+                [href]="d.closing.cta.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="form-direct-link"
+              >
+                <span>Direct WhatsApp Chat</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <p class="closing-signoff">{{ d.closing.signoff }}</p>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a
+          class="wordmark footer-wordmark"
+          [href]="d.footer.brand.href"
+          [attr.aria-label]="d.footer.brand.ariaLabel"
+        >
+          <span class="wordmark-symbol" aria-hidden="true">{{ d.brand.symbol }}</span>
+          <span class="wordmark-copy">{{ d.brand.name }} <span>{{ d.brand.nameSecondary }}</span></span>
+        </a>
+        <span class="footer-tagline">{{ d.footer.tagline }}</span>
+      </div>
+
+      <!-- Footer Quick Navigation -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        @for (item of d.footer.navItems; track item.href) {
+          <a [href]="item.href">{{ item.label }}</a>
+        }
+      </nav>
+
+      <!-- Footer Contact Block -->
+      <div class="footer-contact">
+        <address class="footer-address">
+          <span>📍 {{ d.contact.address }}</span>
+          @if (d.contact.addressMapUrl) {
+            <a [href]="d.contact.addressMapUrl" target="_blank" rel="noopener noreferrer" class="map-link">View on Google Maps ↗</a>
+          }
+        </address>
+
+        <div class="footer-contact-group">
+          <div class="footer-group-label">Phone & WhatsApp:</div>
+          <div class="footer-phones">
+            @for (phone of d.contact.phones; track phone.number) {
+              <a [href]="phone.href" class="footer-phone">
+                📞 {{ phone.number }} <span class="phone-tag">({{ phone.label }})</span>
+              </a>
+            }
+          </div>
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-group-label">Email:</div>
+          <a [href]="d.contact.email.href" class="footer-email">
+            ✉️ {{ d.contact.email.address }}
+          </a>
+        </div>
+
+        <div class="footer-contact-group">
+          <div class="footer-group-label">Social:</div>
+          <div class="footer-social">
+            @for (link of d.contact.social; track link.platform) {
+              <a
+                [href]="link.href"
+                [attr.aria-label]="link.ariaLabel"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-link"
+              >
+                📸 {{ link.platform }} ({{ link.handle }}) ↗
+              </a>
+            }
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar: Copyright & Back to Top -->
+      <div class="footer-bottom-bar">
+        <span class="copyright-text">
+          © {{ d.footer.copyrightYear }} {{ d.brand.name }} {{ d.brand.nameSecondary }}. All rights reserved.
+        </span>
+        <a class="footer-back-top" [href]="d.footer.backToTop.href">
+          {{ d.footer.backToTop.label }} {{ d.footer.backToTop.arrow }}
+        </a>
+      </div>
+    </footer>
+
+  </div>
+}
